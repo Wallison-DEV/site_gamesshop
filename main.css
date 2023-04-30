@@ -3,6 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header,
+section h2,
+section h3,
+form button{
+    font-family : 'Bungee', cursive;
+    font-weight: normal;
+}
+
+header h1,
+section h2{
+    font-weight: normal;
+}
+
+body , input, textarea{
+    font-family: 'Roboto' , sans-serif
+}
+
 header{
     padding: 16px 0;
     background-color: #182C61;
@@ -16,7 +34,9 @@ header nav li {
 }
 header nav li a {
     color: #ecf0f1;
-    text-decoration :none
+    text-decoration :none;
+    margin-right:12px;
+
 }
 .container{
     max-width: 1260px;
@@ -24,8 +44,90 @@ header nav li a {
     margin: 0 auto;
 
 }
-header .container {
+header .container,
+section .container {
     display : flex;
     align-items: center;
     justify-content: space-between;
+}
+.logos img{
+    height: 24px;
+}
+.logos li{
+    display : inline;
+    margin-right:8px;
+}
+section .container{
+    align-items: flex-start;
+}
+section{
+    padding: 24px 0;
+}
+section h2{
+    margin-bottom: 24px;
+}
+
+section{
+    color: #182C61;
+}
+
+section p{
+    margin-bottom :8px;
+}
+section .fachada{
+    margin-right: 32px;
+}
+
+.social_links img{
+    height: 24px;
+}
+.social_links li a{
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-methods li{
+    display: inline;
+    margin-right: 8px;
+}
+form input,
+form textarea,
+form button{
+    display: block;
+    width:320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+form textarea{
+    resize:none;
+    height: 100px;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+form button{
+    color: #fff;
+    background-color: #182C61;
+    border : none;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #6077b4;
+}
+
+input:focus, textarea:focus{
+    outline-color: #182C61;
+}
+
+footer{
+    background-color: #182C61;
+    color: #fff;
+    padding : 16px 0;
 }
